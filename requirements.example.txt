@@ -1,0 +1,10 @@
+# Esta es la versión "corregida" de requirements.txt: sin el pin de numpy
+# que se usa intencionalmente en requirements.txt para la lección de
+# compatibilidad de versiones de Python (numpy==2.5.3 exige Python >=3.12,
+# así que falla en 3.10/3.11 locales aunque funcione dentro de Docker).
+#
+# Úsala para reemplazar requirements.txt una vez dada la lección, o si
+# necesitas que la app corra en local sin pasar por Docker.
+flask==3.1.0
+psycopg2-binary==2.9.10
+python-dotenv==1.0.1
